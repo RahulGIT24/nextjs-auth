@@ -68,6 +68,7 @@ export default function LoginPage() {
         Login Here
       </button>
       <Link href={"/signup"}>Visit SignUp Page</Link>
+      <Link href={"/forgotpassword"}>Forgot Password?</Link>
     </div>
   );
 }
