@@ -18,6 +18,7 @@ export default function ResetPassword() {
         password,
       });
       router.push("/login");
+      toast.success("Password reset successfully");
       return res;
     } catch (e) {
       console.log(e);

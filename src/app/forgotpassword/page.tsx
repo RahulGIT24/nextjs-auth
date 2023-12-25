@@ -8,11 +8,13 @@ export default function LoginPage() {
 
   const sendLink = async () => {
     try {
-      const res = await axios.post("/api/users/forgotpassword", { email });
-      console.log(res);
+      await axios.post("/api/users/forgotpassword", { email });
+      toast.success("Email send successfully");
       return;
     } catch (e) {
+      toast.success("Can't send Email");
       console.log(e);
+      return;
     }
   };
 
